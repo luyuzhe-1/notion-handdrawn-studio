@@ -4,7 +4,7 @@
 
 一个面向 Codex 的插画创作 Skill，以 Notion 官网的手绘视觉语言为研究参考，支持内容配图、独立人物与物件、小装饰和原创 Logo 概念。没有固定主角：人物、动作和构图随你的内容变化。
 
-当前版本：**v1.1.0** · [版本记录](CHANGELOG.md) · [Skill 指令](skills/notion-handdrawn-studio/SKILL.md) · [MIT 许可证](LICENSE)
+当前版本：**v1.2.0** · [版本记录](CHANGELOG.md) · [Skill 指令](skills/notion-handdrawn-studio/SKILL.md) · [MIT 许可证](LICENSE)
 
 ![正文配图、人物、小装饰和 Logo 的第一版生成样例](evaluations/v1.0.0/previews/self-test-board.jpg)
 
@@ -12,7 +12,7 @@
 
 自然、连贯，略有不规则的黑色墨线；简化五官；适量黑色实面；充足留白。用一个清楚的动作或关系表达意思，让轻微的趣味留在画面里。
 
-人物优先通过**外轮廓、姿态和黑白块面**表达。衣褶、手指、鞋纹和碎发只保留识别动作所需的细节。减少线条时，仍保留自然比例、接触关系与人物状态。
+人物优先通过**外轮廓、姿态和黑白块面**表达。衣褶、手指、鞋纹和碎发只保留识别动作所需的细节。允许轻微比例概括，保留身体支撑、接触关系与人物状态。
 
 默认黑白、无文字。用户指定的颜色、文字、比例、背景和人物特征可以覆盖默认值。
 
@@ -89,6 +89,14 @@
 
 [编辑前 PNG](evaluations/v1.1.0/before.png) · [编辑后 PNG](evaluations/v1.1.0/after.png) · [完整提示词与自评](evaluations/v1.1.0/review.json)
 
+## v1.2：进一步概括肢体
+
+人物从减少内部线条，进一步调整为柔和长曲线和概括的手脚形状。已有沙发图的一次编辑有改善，但独立生成的黑板男生仍出现具体袖口、手腕和鞋底；该新图被记录为需要调整，不能据编辑样例宣称稳定。
+
+![v1.2 沙发编辑对比](evaluations/v1.2.0/comparison.jpg)
+
+[v1.2 完整 Skill 快照](versions/v1.2.0/notion-handdrawn-studio) · [安装包](downloads/notion-handdrawn-studio-v1.2.0.zip) · [验证与提示词](evaluations/v1.2.0/README.md)
+
 ## 验证与效果边界
 
 我们保留真实图片、提示词、检查记录和已知问题，便于比较版本。规则走查与实际出图分别记录。
@@ -100,6 +108,7 @@
 | v1.0 后续案例 | 四个新主题已设置，待用户参与验证 |
 | v1.1 实际编辑 | 沙发男生的人物减法，一次编辑 |
 | v1.1 邻近场景 | 用书辅导的首屏人物，仅规则走查 |
+| v1.2 实际验证 | 沙发编辑一次；黑板新图一次，造型需调整 |
 | 文件与结构 | Skill 格式、参考哈希、示例透明通道、首版 Logo 缩略效果 |
 
 [首版自评](evaluations/v1.0.0/self-review.json) · [首版完整提示词](evaluations/v1.0.0/prompts.txt) · [当前验证案例](skills/notion-handdrawn-studio/validation/cases.json) · [Logo 小尺寸检查](evaluations/v1.0.0/previews/logo-size-check.jpg)
@@ -117,10 +126,13 @@ skills/notion-handdrawn-studio/  可安装的 Skill
   validation/                  验证方法与案例集
 evaluations/v1.0.0/             首版样例、提示词与检查记录
 evaluations/v1.1.0/             人物减法对比与自评
+versions/                      v1.2 起的完整 Skill 快照
+downloads/                     对应版本安装包
+evaluations/v1.2.0/             肢体抽象编辑与黑板新图测试
 VERSION                        当前版本号
 CHANGELOG.md                   版本变更
 v1.0.0-manifest.json            首版历史文件清单
-v1.1.0-manifest.json            本次发布文件清单
+v1.1.0-manifest.json            v1.1 发布文件清单
 ```
 
 通过 [提交历史](https://github.com/luyuzhe-1/notion-handdrawn-studio/commits/main) 回溯改动。[v1.0.0 历史快照](https://github.com/luyuzhe-1/notion-handdrawn-studio/tree/16564dba9daff7c44f251ab4265528bc158d4297) 固定在首版远端提交；版本号与提交记录配合使用，不依赖本地标签。

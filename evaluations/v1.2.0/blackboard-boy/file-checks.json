@@ -1,0 +1,21 @@
+{
+  "file": "blackboard-boy.png",
+  "size": [
+    1374,
+    1145
+  ],
+  "format": "PNG",
+  "mode": "RGBA",
+  "alpha_range": [
+    0,
+    255
+  ],
+  "zero_alpha_fraction": 0.7086681540524907,
+  "near_zero_alpha_fraction": 0.7159182064923756,
+  "corner_alpha": [
+    0,
+    0,
+    0,
+    0
+  ]
+}

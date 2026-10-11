@@ -1,0 +1,36 @@
+{
+  "version": "1.2.0",
+  "date": "2026-10-12",
+  "based_on": "1.1.0",
+  "changed_skill_files": [
+    "SKILL.md",
+    "references/prompt-building.md",
+    "references/quality-review.md",
+    "references/style-guide.md",
+    "validation/cases.json"
+  ],
+  "reference_checks": "12 originals match stored SHA-256",
+  "installed_external_differences": [],
+  "observations": [
+    {
+      "reference": "C293",
+      "evidence": "弯曲的袖子和裤腿被概括成大形，倾斜、开口和手与物件的接触交代动作。"
+    },
+    {
+      "reference": "C296",
+      "evidence": "抬起的手臂主要用长弧线组织，裤子为狭长黑面，鞋以少量轮廓识别。"
+    },
+    {
+      "reference": "C294",
+      "evidence": "仍保留必要指线；形体抽象不等于所有手指都省略。"
+    }
+  ],
+  "interpretation": "以柔和长曲线和概括轮廓建立人物，不仅删除衣褶；允许改形，同时保留动作、重心、接触与必要空隙。",
+  "adjacent_case": {
+    "request": "给花浇水的女生",
+    "method": "rule-walkthrough only; no image generated",
+    "plan": "肩到袖口以整体长曲线组织，手保留环握壶柄的掌形与必要拇指；手腕与提壶方向清楚，壶嘴仍朝花盆，身体重心与站立支撑成立。",
+    "visual_result": "not tested"
+  },
+  "human_review": "pending"
+}

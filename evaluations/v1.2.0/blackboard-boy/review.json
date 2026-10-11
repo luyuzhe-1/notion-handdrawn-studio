@@ -1,0 +1,79 @@
+{
+  "case_id": "U05",
+  "skill_version": "1.2.0",
+  "date": "2026-10-12",
+  "method": "independent new-image generation",
+  "generation_attempts": 1,
+  "edits": 0,
+  "tool": "built-in image_gen",
+  "result": "blackboard-boy.png",
+  "prompt": "Use case: stylized-concept. Create one original, clean and restrained black-and-white editorial ink illustration: a young adult man actively writing a simple maths problem on a blackboard. Full body visible, seen in a gentle three-quarter side/back view, looking at the writing. The man stands naturally beside a simple rectangular blackboard, raises one arm and holds a tiny piece of chalk; the chalk tip visibly touches the board at the final equals sign. The other arm hangs loosely. On the blackboard, write only the short white chalk expression \"2 + 3 =\" with ample blank space around it. Shape language inspired by understated Notion website character illustrations: subtly elongated adult figure, a plain shirt shaped by a few broad contours, raised sleeve and arm described by long flowing ink curves with a soft but readable elbow turn, relaxed shoulders, simplified legs as quiet elongated shapes, small wedge-like shoes. A tiny flat palm and necessary thumb establish the chalk grip; very few finger marks, no knuckle or muscle modelling. Small understated facial marks, hair as one quiet solid shape. Preserve clear body weight, directional hand gesture and negative spaces between the arm, torso and board. Crisp organically curved black lines, white skin and shirt, flat black hair and trousers; simple black board with a very thin restrained frame and white chalk marks. No gradients, grey fill, shading, paper grain, chalk dust, decorative symbols, extra classroom furniture, additional people, logos or titles. Balanced spacious composition, subject and blackboard completely inside the canvas. Genuine transparent outer background; white foreground areas within the figure remain opaque. One image only.\\n",
+  "references_viewed": [
+    "C296",
+    "C293"
+  ],
+  "reference_images_passed_to_tool": false,
+  "overall_self_assessment": "需要调整：动作成立，但新图中的人物形体简化不够稳定。",
+  "checks": [
+    {
+      "item": "主体与动作",
+      "status": "pass",
+      "evidence": "一个男生面向黑板，抬手握粉笔；站立、视线和书写意图可读。"
+    },
+    {
+      "item": "肢体形体",
+      "status": "needs-adjustment",
+      "evidence": "抬起袖子有一定柔和弧线，但袖子和裸露前臂仍分段表现；垂下手臂的腕部有具体解剖起伏。"
+    },
+    {
+      "item": "内部细节",
+      "status": "needs-adjustment",
+      "evidence": "双袖口画出卷折分层，垂下的手逐根表现手指，鞋底仍有双层线；衣服含多条体积褶线。"
+    },
+    {
+      "item": "握笔与落笔位置",
+      "status": "partial",
+      "evidence": "握粉笔的手势可以辨认；粉笔在等号右侧，未见明确新笔画，未完全实现提示词要求的粉笔尖接触等号末笔。"
+    },
+    {
+      "item": "题目与额外元素",
+      "status": "pass",
+      "evidence": "黑板呈现 2 + 3 =，没有额外人物、家具或装饰。"
+    },
+    {
+      "item": "站立与空隙",
+      "status": "pass",
+      "evidence": "双脚支撑站姿，手臂与躯干及双腿之间留有可辨空隙。"
+    },
+    {
+      "item": "真实透明背景",
+      "status": "pass",
+      "evidence": "外围存在透明区域，四角 alpha 为 0；白色前景保留。"
+    }
+  ],
+  "file_checks": {
+    "file": "blackboard-boy.png",
+    "size": [
+      1374,
+      1145
+    ],
+    "format": "PNG",
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "zero_alpha_fraction": 0.7086681540524907,
+    "near_zero_alpha_fraction": 0.7159182064923756,
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "style_score_0_to_2": 1,
+  "human_review": "pending",
+  "conclusion": "v1.2 的已有图编辑方向有改善，但这一新图仍保留偏具体的人体与衣物造型；不能据此宣称跨主题画风已经稳定。",
+  "next_revision_focus": "若继续修订，优先让袖子与手臂由连续大形组织，手脚用概括外形表达，并减少袖口与衣褶分段。"
+}

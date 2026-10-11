@@ -1,0 +1,115 @@
+{
+  "version": "1.2.0",
+  "date": "2026-10-12",
+  "request": "人物肢体像 Notion 官网人物一样更抽象、柔和、非常简化，但仍能看出样子。",
+  "tool": "built-in image_gen",
+  "method": "one targeted style-transfer edit; not independent new-image generation",
+  "attempts": 1,
+  "target": "before-v1.1.png",
+  "result": "after-v1.2.png",
+  "style_references_passed": [
+    "C293-preview.jpg",
+    "C296-preview.jpg"
+  ],
+  "additional_reference_viewed": [
+    "C294-preview.jpg"
+  ],
+  "prompt": "Use case: style-transfer. Image 1 is the edit target: a young adult man relaxing on a sofa while using his laptop. Images 2 and 3 are STYLE REFERENCES ONLY from Notion; do not copy their characters, props, poses or layouts. Redraw the PERSON in image 1 with the much more abstract, soft, economical limb shapes visible in the references. This is a change to the character's SHAPE LANGUAGE, not merely erasing clothing folds. Let the near sleeve and forearm become a spacious continuous sweeping curve with a broad simple elbow turn; remove anatomical contour bumps and the realistically modelled wrist. Simplify the bent legs into clear elongated flat black shapes with relaxed broad changes of direction; preserve the crossing/occlusion and comfortable supported seated gesture. The hand on the keyboard is one small flat palm shape with only a necessary thumb or a few short grouped finger marks; the foot is a simple small rounded wedge, without ankle anatomy or a modelled arch. Slightly abstract limb lengths and widths as needed. Keep adult proportions, weight and support, readable negative spaces, and a clear hand-to-keyboard contact; avoid noodle limbs, mitten blobs that erase the action, stick figures or chibi proportions. Simplify the face into restrained small marks and the hair into a quiet solid shape that suits this visual language. Crisp black ink contours with subtle organic asymmetry, white clothing and skin, flat black hair and trousers, no shading. You may reshape the person's silhouette and local proportions substantially; preserve the relaxed sofa/laptop action, the person's general placement and gaze. Keep the sofa and laptop design, size and position, overall composition, canvas aspect ratio, and genuine transparent background of image 1. No extra objects, people, text, colour, texture, glow, grey fill, decorative marks or thickened outline. Generate exactly one revised image.\\n",
+  "self_review": {
+    "overall": "方向有进展，待用户审美复核",
+    "arm": "近侧手臂和袖子收成连续的大弧形；袖口分段被省略，肘部转向更宽缓。",
+    "hand": "仍保留少量并拢指线，手掌在电脑键盘处接触；腕部解剖起伏减少。",
+    "legs_feet": "黑裤保持概括块面；外露脚省略脚弓与内部线，收成小楔形。腿部变化小于手臂。",
+    "readability": "靠坐、双腿位置、看向电脑和操作电脑的动作仍可辨；远侧手由电脑遮挡。",
+    "invariants": "视觉上保留原沙发与电脑主体、靠坐动作和整体布局；局部轮廓位置有漂移，未验证像素一致。",
+    "known_limits": [
+      "脸部仍沿用原样例的卡通倾向；本次重点是肢体外形。",
+      "保留的沙发比人物复杂，尚未测试简洁场景的新图生成。",
+      "这是一张已有图的针对性编辑，不能证明新主题生成一致性。"
+    ]
+  },
+  "file_checks": [
+    {
+      "file": "before-v1.1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "zero_alpha_fraction": 0.4399649302164714,
+      "near_zero_alpha_fraction": 0.44766680399576825,
+      "corner_pixels": [
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          16,
+          16,
+          16,
+          0
+        ],
+        [
+          11,
+          14,
+          13,
+          0
+        ]
+      ]
+    },
+    {
+      "file": "after-v1.2.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "zero_alpha_fraction": 0.44635264078776044,
+      "near_zero_alpha_fraction": 0.4546362559000651,
+      "corner_pixels": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          15,
+          15,
+          15,
+          0
+        ],
+        [
+          16,
+          17,
+          16,
+          0
+        ]
+      ]
+    }
+  ],
+  "static_validation": "passed",
+  "human_review": "pending",
+  "adjacent_case": "浇花女生仅规则走查，详见 reference-analysis.json；未实际生图。",
+  "logo_accent_regression": "相关模式文件未修改；没有追加生成。"
+}

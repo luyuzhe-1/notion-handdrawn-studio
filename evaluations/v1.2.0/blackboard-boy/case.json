@@ -1,0 +1,25 @@
+{
+  "case_id": "U05",
+  "skill_version": "1.2.0",
+  "date": "2026-10-12",
+  "request": "为了测试用例，制作一个，在黑板上写题的男生进行验证",
+  "method": "independent new-image generation",
+  "references_viewed": [
+    "C296",
+    "C293"
+  ],
+  "tool": "built-in image_gen",
+  "image_inputs": "none; inspected local references and described shape language in text",
+  "background": "transparent",
+  "observable_checks": [
+    "看得出正在写题，而非仅站在黑板旁",
+    "抬手由柔和长曲线概括，肘部方向可辨",
+    "手握粉笔，笔尖接触书写位置",
+    "手脚、衣服细节克制，重心与四肢空隙清楚",
+    "黑板仅呈现一行简短题目，不铺满文字",
+    "外围真实透明",
+    "原创人物和构图"
+  ],
+  "human_review": "pending",
+  "skill_entry_sha256": "49f54811e55ddf16e7c69552b05f6cf22f2a0495f740488e489644046e2e4f4f"
+}
