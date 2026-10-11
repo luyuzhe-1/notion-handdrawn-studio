@@ -1,0 +1,16 @@
+{
+  "installed_path": "skills/notion-handdrawn-studio",
+  "installed_files_verified": 35,
+  "archive": "notion-handdrawn-studio-v1.0.0.zip",
+  "archive_bytes": null,
+  "official_skill_validator": "passed",
+  "review_page_checks": {
+    "images": "all decoded",
+    "cards": 4,
+    "feedback_download": "passed using synthetic data; not user feedback",
+    "mobile_horizontal_overflow": false,
+    "script_errors": 0
+  },
+  "human_validation": "pending",
+  "archive_note": "This snapshot is a portable GitHub archive; original local ZIP size does not apply."
+}

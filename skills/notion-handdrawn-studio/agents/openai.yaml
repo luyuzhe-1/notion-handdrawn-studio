@@ -1,0 +1,4 @@
+interface:
+  display_name: "Notion 黑白手绘工作室"
+  short_description: "干净克制的黑白手绘内容配图、人物小装饰与原创图形标志设计"
+  default_prompt: "使用 $notion-handdrawn-studio，根据我的内容或想法创作干净克制的黑白手绘配图、独立插画或 Logo。"

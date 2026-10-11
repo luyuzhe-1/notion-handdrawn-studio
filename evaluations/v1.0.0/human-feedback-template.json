@@ -1,0 +1,26 @@
+{
+  "status": "pending",
+  "reviews": [
+    {
+      "id": "S03",
+      "decision": null,
+      "notes": ""
+    },
+    {
+      "id": "S04",
+      "decision": null,
+      "notes": ""
+    },
+    {
+      "id": "S05",
+      "decision": null,
+      "notes": ""
+    },
+    {
+      "id": "S06",
+      "decision": null,
+      "notes": ""
+    }
+  ],
+  "next_case": null
+}

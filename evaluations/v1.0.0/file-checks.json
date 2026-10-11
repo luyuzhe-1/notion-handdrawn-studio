@@ -1,0 +1,74 @@
+[
+  {
+    "id": "S03",
+    "file": "generated/S03-content.png",
+    "width": 1774,
+    "height": 887,
+    "format": "PNG",
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "fully_transparent_percent": 0.0,
+    "partially_transparent_percent": 0.0,
+    "max_border_alpha": 255,
+    "visible_bbox_alpha_gt_16": [
+      0,
+      0,
+      1774,
+      887
+    ]
+  },
+  {
+    "id": "S04",
+    "file": "generated/S04-person.png",
+    "width": 1317,
+    "height": 1194,
+    "format": "PNG",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "fully_transparent_percent": 71.001,
+    "partially_transparent_percent": 28.88,
+    "max_border_alpha": 0,
+    "visible_bbox_alpha_gt_16": [
+      61,
+      70,
+      1280,
+      1137
+    ]
+  },
+  {
+    "id": "S05",
+    "file": "generated/S05-pocket-cloud.png",
+    "width": 1327,
+    "height": 1185,
+    "format": "PNG",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "fully_transparent_percent": 96.56,
+    "partially_transparent_percent": 3.228,
+    "max_border_alpha": 0,
+    "visible_bbox_alpha_gt_16": [
+      409,
+      282,
+      955,
+      952
+    ]
+  },
+  {
+    "id": "S06",
+    "file": "generated/S06-logo.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "fully_transparent_percent": 87.246,
+    "partially_transparent_percent": 12.626,
+    "max_border_alpha": 0,
+    "visible_bbox_alpha_gt_16": [
+      204,
+      123,
+      1100,
+      1104
+    ]
+  }
+]
