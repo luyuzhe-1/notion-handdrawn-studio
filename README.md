@@ -4,7 +4,7 @@
 
 一个面向 Codex 的插画创作 Skill，以 Notion 官网的手绘视觉语言为研究参考，支持内容配图、独立人物与物件、小装饰和原创 Logo 概念。没有固定主角：人物、动作和构图随你的内容变化。
 
-当前版本：**v1.2.0** · [版本记录](CHANGELOG.md) · [Skill 指令](skills/notion-handdrawn-studio/SKILL.md) · [MIT 许可证](LICENSE)
+当前版本：**v1.3.0** · [版本记录](CHANGELOG.md) · [Skill 指令](skills/notion-handdrawn-studio/SKILL.md) · [MIT 许可证](LICENSE)
 
 ![正文配图、人物、小装饰和 Logo 的第一版生成样例](evaluations/v1.0.0/previews/self-test-board.jpg)
 
@@ -97,6 +97,16 @@
 
 [v1.2 完整 Skill 快照](versions/v1.2.0/notion-handdrawn-studio) · [安装包](downloads/notion-handdrawn-studio-v1.2.0.zip) · [验证与提示词](evaluations/v1.2.0/README.md)
 
+## v1.3：统一人物造型基准
+
+新图使用同一段正向造型基准，先以宽缓平面大形组织人物，再补主题、动作与构图。外轮廓、内部细节和动作接触分别判断，首图不会被修图结果覆盖。
+
+![v1.2 原黑板首图、v1.3 黑板与浇花新首图](evaluations/v1.3.0/comparison.jpg)
+
+两例独立新图都减少了人物细节，但线条仍偏光滑、圆润。黑板粉笔接触经一次修正仍未完全解决，浇花水线未明确落入盆土。**这是改进版，稳定性仍待验证，用户审美评价尚未完成。**
+
+[v1.3 完整 Skill 快照](versions/v1.3.0/notion-handdrawn-studio) · [安装包](downloads/notion-handdrawn-studio-v1.3.0.zip) · [验证与实际提示词](evaluations/v1.3.0/README.md)
+
 ## 验证与效果边界
 
 我们保留真实图片、提示词、检查记录和已知问题，便于比较版本。规则走查与实际出图分别记录。
@@ -109,6 +119,7 @@
 | v1.1 实际编辑 | 沙发男生的人物减法，一次编辑 |
 | v1.1 邻近场景 | 用书辅导的首屏人物，仅规则走查 |
 | v1.2 实际验证 | 沙发编辑一次；黑板新图一次，造型需调整 |
+| v1.3 实际验证 | 黑板、浇花独立新图各一次；黑板局部编辑一次，接触仍未完全解决 |
 | 文件与结构 | Skill 格式、参考哈希、示例透明通道、首版 Logo 缩略效果 |
 
 [首版自评](evaluations/v1.0.0/self-review.json) · [首版完整提示词](evaluations/v1.0.0/prompts.txt) · [当前验证案例](skills/notion-handdrawn-studio/validation/cases.json) · [Logo 小尺寸检查](evaluations/v1.0.0/previews/logo-size-check.jpg)
@@ -129,6 +140,7 @@ evaluations/v1.1.0/             人物减法对比与自评
 versions/                      v1.2 起的完整 Skill 快照
 downloads/                     对应版本安装包
 evaluations/v1.2.0/             肢体抽象编辑与黑板新图测试
+evaluations/v1.3.0/             两例新图回归及局部编辑
 VERSION                        当前版本号
 CHANGELOG.md                   版本变更
 v1.0.0-manifest.json            首版历史文件清单

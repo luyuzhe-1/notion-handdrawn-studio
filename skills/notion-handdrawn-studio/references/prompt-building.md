@@ -4,18 +4,29 @@
 
 ## 新图
 
-1. 用途与核心意思：正文配图／独立人物／小装饰／图形标志，画面表达什么。
-2. 主题与关系：用户给的主体、动作、物件关系；没有明确场景时补充最少、合理的细节。
-3. 风格：连贯略不规则的黑色墨线、简化形体与五官、适量实黑、干净克制；按人物或小图标调整线重。人物用正向造型描述落实减法，例如“手臂与袖子由舒展的长曲线概括，肘膝转向宽缓，腿是简洁的长形或黑面；手为小掌形与必要拇指，脚为小楔形，头发成整体块面；内部线只交代必要接触与遮挡”，不要只堆叠“极简、细节少”形容词。
-4. 构图与背景：关键部位完整可见，留白与版式适配，白底或真实透明底。
-5. 文字和颜色：默认无文字、黑白；明确请求优先，文字逐字保留。
-6. 相关限制：只写当前最可能偏离的项，例如无额外角色、无纹理、无多色徽章。
+先确定模式。有人物时使用下面的「人物造型基准」，再附当前主题的短动作描述；纯物件、装饰和 Logo 仍按各自参考构建，不套人物基准。不要把多篇参考文件串成一个不断加长的提示词。
 
-有图片时标明每张的作用，例如：“图 1 只参考人物线条与黑白关系，图 2 只参考关系的轻量表达；新主题、新角色、新构图，不重绘原参考。”
+### 人物造型基准
 
-调用内置工具时，真正透明背景通过工具的 `transparent_background` 选项指定，同时在提示词中说明透明。新图遵循工具当前的参考输入规则；如果工具要求新图省略图片参数，先查看参考并将特征写进文字提示词，不把新图冒充原图编辑。编辑时使用本地目标路径或最近图片机制，不同时传两种机制。`quality`、CLI 尺寸旗标等不能写成不存在的内置工具参数。
+这是默认人物方向的可直接使用文本。用户没有要求改变画风时，跨场景沿用同一段；只修改主题、动作、构图、明确文字和背景。用户明确指定的体态、服装、身份或画风优先，不把此段当成固定角色模板。
 
-生成记录保留最终实际使用的完整提示词与参考 ID。若工具返回多个版本，记录交付版本。仅提示词任务交付可直接使用的完整文本，不调用生成工具。
+```text
+Draw a deliberately schematic black-and-white ink character in the quiet visual language of Notion website illustrations. Build the person from a few broad flat shapes: a roomy torso, sweeping curved sleeves and limbs, simple elongated lower-body shapes, and small plain feet. Silhouette and gesture carry the action. Elbows and knees are broad changes of direction within the shape. Hands are small flat palm shapes with only the thumb or grouped finger indication needed for the action. Hair is a quiet ink mass; the face has just a few small marks. Use clean, slightly irregular continuous contours, opaque white shapes and selective solid black shapes. Clothing interiors are mostly empty; add an interior line only when a contact or overlap would otherwise be unclear. Keep adult character proportions playfully abstract, the pose supported, and gaps between limbs readable. No anatomical modelling, garment construction detail, shading, texture or decorative flourishes.
+```
+
+主题段只补充人物是谁、做什么、与哪件物品接触、画面如何容纳主体。用动作信息扩充简单想法，不自行添加年龄质感、时装、面料、身体结构和摄影式描述。服装未指定时选便于组成完整大形的普通衣服；不要把宽袖、黑裤或某个发型规定为所有人物的身份。
+
+接触动作写成可看见的证据，例如「粉笔尖接在正在形成的笔画末端」「壶嘴朝花盆，水线落入盆内」。保留解释动作必需的信息，不通过逐个描述关节与手指来追求真实性。文字逐字列出；不需要文字时写无文字。
+
+构图按用途选择，说明关键部位完整、留白与白底／透明底。负向限制只补充当前主题的实际风险，不重复基准、堆叠风格同义词，或把历史错误逐一变成永久禁令。
+
+### 图片输入与生成记录
+
+新图与编辑分别遵守工具当前规则。若内置工具要求新图省略图片参数，查看参考后把观察转成文字；记录 `reference_mode: viewed_then_text`，不声称图片被传给了生成器。允许图片参考的工具才标明各图的风格参考角色。不得为了传参考而把全新场景伪装成编辑。
+
+透明背景同时通过工具的 `transparent_background` 选项指定。不要使用不存在的内置参数，或把 CLI 的 quality／尺寸旗标当成工具选项。
+
+保留实际完整提示词、参考 ID、输入方式、工具与每次输出。首次生成原样保留；后续编辑另存并分别评价。仅提示词任务交付完整文本，不调用生成工具。
 
 ## 编辑
 

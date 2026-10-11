@@ -1,0 +1,62 @@
+[
+  {
+    "file": "evaluation/R01-blackboard/edited.png",
+    "size": [
+      1206,
+      1305
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_ratio": 0.628811243908173,
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "sha256": "9cbf2943db881f7f5df6cea57e06529ef9678f12503e0028b78d2fe029f3b7e4"
+  },
+  {
+    "file": "evaluation/R01-blackboard/first.png",
+    "size": [
+      1206,
+      1304
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_ratio": 0.6313047492598358,
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "sha256": "b4081548c4be8c108ef699a42edcbf3610e8fa3e16ccd517d899f29ab51f66ea"
+  },
+  {
+    "file": "evaluation/R02-watering/first.png",
+    "size": [
+      1244,
+      1265
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_ratio": 0.6802072874699745,
+    "corner_alpha": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "sha256": "379412d8ace2e34b5111e1474dcda2c20b0cdd841ec17c2c7223bcea5f9c22b3"
+  }
+]

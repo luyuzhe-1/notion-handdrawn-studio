@@ -1,0 +1,50 @@
+[
+  {
+    "case": "R01-blackboard",
+    "intent": "generate",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: stylized-concept.\nAsset type: standalone editorial character illustration.\nDraw a deliberately schematic black-and-white ink character in the quiet visual language of Notion website illustrations. Build the person from a few broad flat shapes: a roomy torso, sweeping curved sleeves and limbs, simple elongated lower-body shapes, and small plain feet. Silhouette and gesture carry the action. Elbows and knees are broad changes of direction within the shape. Hands are small flat palm shapes with only the thumb or grouped finger indication needed for the action. Hair is a quiet ink mass; the face has just a few small marks. Use clean, slightly irregular continuous contours, opaque white shapes and selective solid black shapes. Clothing interiors are mostly empty; add an interior line only when a contact or overlap would otherwise be unclear. Keep adult character proportions playfully abstract, the pose supported, and gaps between limbs readable. No anatomical modelling, garment construction detail, shading, texture or decorative flourishes.\nSubject/action: One boy writing a maths problem on a blackboard, full figure in a simple side/back view. His lifted arm makes one generous sweeping bend toward the board; the free arm rests down. A tiny chalk piece meets the end of the lower stroke of the equals sign he is drawing. Board text (verbatim): \"2 + 3 =\" in spare white chalk strokes on a flat black rectangle. Keep the board frame a simple outline. Composition: spacious standalone illustration, entire figure and board inside the canvas. Genuine transparent outer background; white foreground areas remain opaque. No other classroom objects or people. One image.\n",
+      "transparent_background": true
+    },
+    "reference_mode": "viewed_then_text",
+    "references_viewed": [
+      "C293",
+      "C296"
+    ],
+    "images_supplied_to_generator": [],
+    "output": "R01-blackboard/first.png",
+    "original_output": "original-local-output/exec-6df3eed2-8ee4-4f65-babb-9f2a0538bdc5.png"
+  },
+  {
+    "case": "R02-watering",
+    "intent": "generate",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: stylized-concept.\nAsset type: standalone editorial character illustration.\nDraw a deliberately schematic black-and-white ink character in the quiet visual language of Notion website illustrations. Build the person from a few broad flat shapes: a roomy torso, sweeping curved sleeves and limbs, simple elongated lower-body shapes, and small plain feet. Silhouette and gesture carry the action. Elbows and knees are broad changes of direction within the shape. Hands are small flat palm shapes with only the thumb or grouped finger indication needed for the action. Hair is a quiet ink mass; the face has just a few small marks. Use clean, slightly irregular continuous contours, opaque white shapes and selective solid black shapes. Clothing interiors are mostly empty; add an interior line only when a contact or overlap would otherwise be unclear. Keep adult character proportions playfully abstract, the pose supported, and gaps between limbs readable. No anatomical modelling, garment construction detail, shading, texture or decorative flourishes.\nSubject/action: One woman gently leaning toward a potted flowering plant as she waters it. Her arm forms a generous sweeping bend to hold the watering-can handle with a small readable grip; the other arm rests comfortably near her body. The can tilts toward the pot, with a few water strokes falling from the spout into its soil. A simple pot, a small stem and one open bloom make the plant recognizable. Composition: spacious standalone illustration, entire figure, can and plant inside the canvas. Genuine transparent outer background; white foreground areas remain opaque. No text, extra scenery or people. One image.\n",
+      "transparent_background": true
+    },
+    "reference_mode": "viewed_then_text",
+    "references_viewed": [
+      "C293",
+      "C296"
+    ],
+    "images_supplied_to_generator": [],
+    "output": "R02-watering/first.png",
+    "original_output": "original-local-output/exec-f7e23c6a-aace-4c82-b228-d0963258e3a2.png"
+  },
+  {
+    "case": "R01-blackboard",
+    "intent": "edit",
+    "tool": "image_gen.imagegen",
+    "arguments": {
+      "prompt": "Use case: precise-object-edit. Image 1 is the edit target. Correct only the chalk-to-board contact in this illustration. Move/tilt the tiny chalk piece and make the smallest necessary adjustment to the writing fingertips so that the chalk tip visibly joins the right endpoint of the LOWER horizontal stroke of the equals sign, making the ongoing writing action unambiguous. Preserve the exact expression \"2 + 3 =\", all other marks, the character's broad curved sleeve shape, simple face, silhouette, clothing, feet, position, blackboard, composition, black and white palette, and genuine transparent background. Keep the chalk grip simple. No new detail or objects.",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "evaluations/v1.3.0/R01-blackboard/first.png"
+      ]
+    },
+    "output": "R01-blackboard/edited.png",
+    "original_output": "original-local-output/exec-0a7eb00e-4cf6-41c4-b932-9da9ec26bcd2.png"
+  }
+]

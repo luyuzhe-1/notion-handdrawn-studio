@@ -1,0 +1,18 @@
+{
+  "id": "R01",
+  "subject": "黑板写题男生",
+  "mode": "generate",
+  "first_output": "R01-blackboard/first.png",
+  "shape": "本轮形体目标基本达到：袖臂连续大弧，裤腿为整块长形，鞋无分层。",
+  "detail": "内部细节明显少于 v1.2；空白衣身、少量面部信息；垂手仍有并拢指线。",
+  "action": "需要调整：粉笔与等号下横线之间有间隙，未清楚表现正在落笔。",
+  "style_limit": "形体偏圆润、线条偏均匀，尚未达到所选官网参考的全部笔触和比例特征。",
+  "first_overall": "需要调整",
+  "edit": {
+    "output": "R01-blackboard/edited.png",
+    "scope": "仅粉笔与握持局部",
+    "result": "未完全解决：粉笔方向更接近笔画，但放大仍可见小间隙；不再重试。",
+    "invariants": "主体、布局、题目和造型基本保持；像素和尺寸非严格一致，图高由1304变1305。"
+  },
+  "human": "pending"
+}
