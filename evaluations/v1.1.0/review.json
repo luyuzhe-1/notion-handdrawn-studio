@@ -1,0 +1,53 @@
+{
+  "version": "1.1.0",
+  "date": "2026-10-12",
+  "user_feedback": "人物细节太多；logo和装饰都还OK。用户确认往人物减法方向修改。",
+  "tool": "built-in image_gen",
+  "method": "one targeted edit; not an independent new-image generation test",
+  "source": "before.png",
+  "result": "after.png",
+  "prompt": "Use case: precise-object-edit. 编辑提供的沙发男生插画，只对人物进行一次明确的简化，让它更接近干净克制的 Notion 经典简笔人物。保留原图人物身份、舒适的靠坐姿势、双腿位置、视线、沙发外形与所有沙发线条、笔记本外形与位置、整体构图、画布尺寸和真实透明背景。修改重点：上衣依靠外轮廓表达，删除胸前、腹部和袖子上重复的衣褶，仅留解释肘部转折和遮挡所必需的短线；黑裤子保留整体黑面，去掉大多数白色裤褶线；手概括成自然的掌形和必要拇指，不逐根刻画指节，仍然清楚地接触键盘；袜子保留简单轮廓；头发从碎发束概括为少数连贯的大形状，不加发丝；保留小巧的点眼和短鼻口，不用大眼或幼态比例。保持原来的细墨线线重，允许轻微自然不对称，不能用更粗描边或颗粒替代减线。保持人物肢体完整、电脑操作动作可读、黑白关系和白色前景填充。无新人物、道具、文字、颜色、阴影、纹理或背景。生成一个修订版本即可。\n",
+  "attempts": 1,
+  "references_viewed": [
+    "C293"
+  ],
+  "self_review": {
+    "clothing": "胸腹与袖口重复衣褶明显减少，黑裤子内部白线基本去除。",
+    "hair_hands": "手与电脑接触仍清楚；手指保留少量线，头发仅小幅简化。",
+    "invariants": "视觉上保留沙发、电脑、靠坐动作与构图；未承诺像素级一致。",
+    "limitation": "面部和身体比例基本保留；本次只验证编辑减线效果，尚未实测新主题生成的一致性。"
+  },
+  "file_checks": [
+    {
+      "file": "before.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.44270070393880206
+    },
+    {
+      "file": "after.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "transparent_fraction": 0.4399649302164714
+    }
+  ],
+  "human_review": "pending",
+  "adjacent_case_walkthrough": {
+    "case": "U04 用书辅导首屏人物",
+    "plan": "人物衣服以大轮廓表达，保留托书掌形与指向书页的一根手指，头发为整体块面；保留原首屏留白与指书动作。",
+    "status": "rule-walkthrough only; no image generated"
+  },
+  "logo_accent_regression": "Mode reference files unchanged; no new generation."
+}
